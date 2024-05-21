@@ -1,0 +1,199 @@
+.nav ul{
+    column-gap: 4rem;
+    padding: 1rem;
+    
+}
+
+.section_text {
+    padding: 2rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* margin: 2rem; */
+
+    & h2{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    & h3{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+
+p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.jogos {
+    border-radius: 5px;
+    background-color: var(--light-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem;
+    width: 60vh;
+    height: 50vh;
+    min-width: 20rem;
+    min-height: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+        /* width: 90%; */
+    }
+
+    & p {
+        margin-left: 0;
+        
+    }
+}
+
+
+
+.aside1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    place-items: center;
+    background-color: var(--brand-color);
+
+
+    & .jogos {
+        margin: 2rem;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.aside2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    place-items: center;
+    background-color: var(--darkest-color);
+
+
+    & .jogos {
+        margin: 2rem;
+        width: 50%;
+        height: 50%;
+    }
+
+    & h3 {
+        color: var(--brand-color);
+    }
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+
+    & a {
+        font-size: 2.5rem;
+        color: var(--darkest-color);
+        border: 5px solid var(--brand-color);
+        background-color: var(--brand-color);
+        font-weight: 900;
+        padding: 1rem;
+        border-radius: 7px;
+        line-height: 4rem;
+    }
+
+    & a:hover {
+        background-color: var(--darkest-color);
+        color: var(--brand-color);
+        /* font-size: 3.5rem; */
+    } 
+
+}
+
+
+.box-form-radio {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.titulo_filtro {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+.jogo_loja {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    place-items: center;
+
+
+    & .jogos {
+        margin: 2rem;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    place-items: center;
+
+    & button{
+        /* width: 100% */
+        font-size: 2rem;
+    }
+}
+
+.footer {
+    color: var(--brand-color);
+    background-color: var(--darkest-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.col-lg-9 {
+    /* border: 1px solid black; */
+}
+
+.col-lg-3 {
+    /* border: 1px solid black; */
+}
+
+.jogos:hover {
+    cursor: pointer;
+    animation: jogos 1s ease-in-out infinite;
+}
+
+
+/* keyframes para criar animação */
+@keyframes jogos {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(#A8A5B1 0 0 3rem);
+    }
+}
+
